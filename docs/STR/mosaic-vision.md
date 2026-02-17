@@ -1,3 +1,17 @@
+---
+doc_uid: "MOS-OPS-STR-001"
+title: "The Mosaic Vision"
+org: "MOS"
+category: "STR"
+department: "OPS"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
 # The Mosaic Vision
 
 *Frankie Myers, Founder — Mosaic Design Labs*

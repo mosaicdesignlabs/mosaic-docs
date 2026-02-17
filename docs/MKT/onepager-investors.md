@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-BD-MKT-003"
+title: "One-Pager: Investor Overview"
+org: "MOS"
+category: "MKT"
+department: "BD"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "Leadership"
+lifecycle:
+  desired_state: "draft"
+---
+
 # Mosaic Design Labs — Investor Overview
 
 ---

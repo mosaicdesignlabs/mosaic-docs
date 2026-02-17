@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-OPS-GOV-001"
+title: "Entity Structure Memo"
+org: "MOS"
+category: "GOV"
+department: "OPS"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "Leadership"
+lifecycle:
+  desired_state: "draft"
+---
+
 # Entity Structure Memo
 
 *Mosaic Design Labs — Internal Strategic Document*

@@ -1,3 +1,17 @@
+---
+doc_uid: "MOS-ENG-DG-001"
+title: "How to Be an Engineer"
+org: "MOS"
+category: "DG"
+department: "ENG"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
 # How to Be an Engineer
 
 *A collection of engineering wisdom from Mosaic Design Labs*

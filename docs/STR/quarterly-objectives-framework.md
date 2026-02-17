@@ -1,3 +1,17 @@
+---
+doc_uid: "MOS-OPS-STR-003"
+title: "Quarterly Objectives Framework"
+org: "MOS"
+category: "STR"
+department: "OPS"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
 # Quarterly Objectives Framework
 
 *Mosaic Design Labs — Internal Operations Document*

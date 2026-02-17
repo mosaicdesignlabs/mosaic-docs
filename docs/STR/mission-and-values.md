@@ -1,3 +1,17 @@
+---
+doc_uid: "MOS-OPS-STR-002"
+title: "Mission Statement and Core Values"
+org: "MOS"
+category: "STR"
+department: "OPS"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
 # Mission Statement & Core Values
 
 *Mosaic Design Labs — Internal Reference Document*

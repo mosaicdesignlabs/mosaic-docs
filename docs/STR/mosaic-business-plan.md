@@ -1,3 +1,17 @@
+---
+doc_uid: "MOS-BD-STR-001"
+title: "Business Plan"
+org: "MOS"
+category: "STR"
+department: "BD"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "Leadership"
+lifecycle:
+  desired_state: "draft"
+---
 # Mosaic Design Labs — Business Plan
 
 *Prepared by Frankie Robles, Founder*

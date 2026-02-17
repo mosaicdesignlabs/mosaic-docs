@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-OPS-GOV-002"
+title: "R&D Advisory Committee Charter"
+org: "MOS"
+category: "GOV"
+department: "OPS"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
+
 # R&D Advisory Committee Charter
 
 *Mosaic Design Labs — Internal Governance Document*

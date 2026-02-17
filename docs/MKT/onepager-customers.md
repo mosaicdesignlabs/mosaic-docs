@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-BD-MKT-002"
+title: "One-Pager: For Development Partners and Clients"
+org: "MOS"
+category: "MKT"
+department: "BD"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
+
 # Mosaic Design Labs — For Development Partners and Clients
 
 ---

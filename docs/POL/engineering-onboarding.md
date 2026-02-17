@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-ENG-POL-001"
+title: "Engineering Onboarding Guide"
+org: "MOS"
+category: "POL"
+department: "ENG"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
+
 # Mosaic Design Labs — Engineering Onboarding Guide
 
 *Everything you need to be productive from day one.*

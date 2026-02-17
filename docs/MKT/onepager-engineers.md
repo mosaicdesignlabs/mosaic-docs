@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-BD-MKT-001"
+title: "One-Pager: For Engineers"
+org: "MOS"
+category: "MKT"
+department: "BD"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
+
 # Mosaic Design Labs — For Engineers
 
 ---

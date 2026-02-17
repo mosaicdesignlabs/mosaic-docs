@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-ENG-STR-001"
+title: "R&D Project Selection Criteria"
+org: "MOS"
+category: "STR"
+department: "ENG"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "Engineering"
+  - "Leadership"
+lifecycle:
+  desired_state: "draft"
+---
 # R&D Project Selection Criteria
 
 *Mosaic Design Labs — Internal Strategic Document*

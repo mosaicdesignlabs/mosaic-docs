@@ -1,3 +1,18 @@
+---
+doc_uid: "MOS-BD-MKT-004"
+title: "One-Pager: For Makers, Students, and Community"
+org: "MOS"
+category: "MKT"
+department: "BD"
+notion:
+  database: "Documents"
+  publish: true
+access_groups:
+  - "All-Hands"
+lifecycle:
+  desired_state: "draft"
+---
+
 # Mosaic Commons — For Makers, Students, and Community
 
 ---
