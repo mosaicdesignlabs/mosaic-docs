@@ -1,0 +1,63 @@
+name: Publish Release
+
+on:
+  push:
+    branches: [release]
+
+jobs:
+  publish-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Detect merged PR
+        id: pr
+        run: |
+          PR_NUMBER=$(git log -1 --pretty=format:"%s" | grep -oP '#\K\d+' || echo "")
+          if [ -n "$PR_NUMBER" ]; then
+            echo "number=$PR_NUMBER" >> $GITHUB_OUTPUT
+            echo "url=${{ github.server_url }}/${{ github.repository }}/pulls/$PR_NUMBER" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate documents
+        run: python scripts/validate_docs.py --repo-root .
+
+      - name: Publish releases to Notion
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID_DOCUMENTS: ${{ secrets.NOTION_DATABASE_ID_DOCUMENTS }}
+          GITEA_URL: ${{ github.server_url }}
+          GITEA_TOKEN: ${{ secrets.GITEA_TOKEN }}
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+          BOT_COMMIT_AUTHOR: mosaic-bot
+        run: |
+          python scripts/publish_to_notion.py \
+            --mode release \
+            --repo-root . \
+            --all \
+            --output publish-results.json
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publish-results-release
+          path: publish-results.json
+          retention-days: 90
